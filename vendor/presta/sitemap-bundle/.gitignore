@@ -1,0 +1,7 @@
+*~
+Tests/app/cache/
+composer.lock
+phpunit.xml
+vendor/
+Tests/web
+var/

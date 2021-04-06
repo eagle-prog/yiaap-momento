@@ -1,0 +1,139 @@
+<?php //App.Entity.Country
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\Length'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Length')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\NotNull'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotNull')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\Callback'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Callback')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Country',
+                'translations',
+                'code',
+                5 => 'hidden',
+            ],
+            'defaultGroup' => [
+                'Country',
+            ],
+            'members' => [
+                [
+                    'translations' => [
+                        $o[1],
+                    ],
+                    'code' => [
+                        $o[2],
+                    ],
+                    'hidden' => [
+                        $o[5],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'translations' => $o[1],
+                    'code' => $o[2],
+                    'hidden' => $o[5],
+                ],
+            ],
+            'constraints' => [
+                [
+                    $o[7],
+                ],
+                2 => [
+                    $o[3],
+                    $o[4],
+                ],
+                5 => [
+                    $o[6],
+                ],
+            ],
+            'constraintsByGroup' => [
+                [
+                    'Default' => [
+                        $o[7],
+                    ],
+                    'Country' => [
+                        $o[7],
+                    ],
+                ],
+                2 => [
+                    'Default' => [
+                        $o[3],
+                        $o[4],
+                    ],
+                    'Country' => [
+                        $o[3],
+                        $o[4],
+                    ],
+                ],
+                5 => [
+                    'Default' => [
+                        $o[6],
+                    ],
+                    'Country' => [
+                        $o[6],
+                    ],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\Country',
+                'App\\Entity\\Country',
+                5 => 'App\\Entity\\Country',
+            ],
+            'property' => [
+                1 => 'translations',
+                'code',
+                5 => 'hidden',
+            ],
+            'cascadingStrategy' => [
+                1 => 2,
+            ],
+            'traversalStrategy' => [
+                1 => 1,
+            ],
+            'groups' => [
+                3 => [
+                    'Default',
+                    'Country',
+                ],
+                [
+                    'Default',
+                    'Country',
+                ],
+                6 => [
+                    'Default',
+                    'Country',
+                ],
+                [
+                    'Default',
+                    'Country',
+                ],
+            ],
+            'max' => [
+                4 => 2,
+            ],
+            'min' => [
+                4 => 2,
+            ],
+            'allowEmptyString' => [
+                4 => false,
+            ],
+            'callback' => [
+                7 => [
+                    'App\\Validation\\Validator',
+                    'validate',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

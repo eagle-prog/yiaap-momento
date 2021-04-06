@@ -1,0 +1,95 @@
+<?php //App.Entity.HomepageHeroSettings
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Validator\\Constraints\\File'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\File')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\HomepageHeroSettings',
+                'translations',
+                'customBackgroundFile',
+            ],
+            'defaultGroup' => [
+                'HomepageHeroSettings',
+            ],
+            'members' => [
+                [
+                    'translations' => [
+                        $o[1],
+                    ],
+                    'customBackgroundFile' => [
+                        $o[2],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'translations' => $o[1],
+                    'customBackgroundFile' => $o[2],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\HomepageHeroSettings',
+                'App\\Entity\\HomepageHeroSettings',
+            ],
+            'property' => [
+                1 => 'translations',
+                'customBackgroundFile',
+            ],
+            'cascadingStrategy' => [
+                1 => 2,
+            ],
+            'traversalStrategy' => [
+                1 => 1,
+            ],
+            'constraints' => [
+                2 => [
+                    $o[3],
+                ],
+            ],
+            'constraintsByGroup' => [
+                2 => [
+                    'Default' => [
+                        $o[3],
+                    ],
+                    'HomepageHeroSettings' => [
+                        $o[3],
+                    ],
+                ],
+            ],
+            'binaryFormat' => [
+                3 => false,
+            ],
+            'mimeTypes' => [
+                3 => [
+                    'image/jpeg',
+                    'image/jpg',
+                    'image/gif',
+                    'image/png',
+                ],
+            ],
+            'mimeTypesMessage' => [
+                3 => 'The file should be an image',
+            ],
+            'groups' => [
+                3 => [
+                    'Default',
+                    'HomepageHeroSettings',
+                ],
+            ],
+        ],
+        'Symfony\\Component\\Validator\\Constraints\\File' => [
+            'maxSize' => [
+                3 => 5000000,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,76 @@
+<?php //%255BFOS%255CCommentBundle%255CEntity%255CThread%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\AssignedGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\AssignedGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'FOS\\CommentBundle\\Entity\\Thread',
+            ],
+            'namespace' => [
+                'FOS\\CommentBundle\\Entity',
+            ],
+            'rootEntityName' => [
+                'FOS\\CommentBundle\\Entity\\Thread',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'fieldMappings' => [
+                [
+                    'permalink' => [
+                        'fieldName' => 'permalink',
+                        'type' => 'string',
+                        'columnName' => 'permalink',
+                    ],
+                    'isCommentable' => [
+                        'fieldName' => 'isCommentable',
+                        'type' => 'boolean',
+                        'columnName' => 'is_commentable',
+                    ],
+                    'numComments' => [
+                        'fieldName' => 'numComments',
+                        'type' => 'integer',
+                        'columnName' => 'num_comments',
+                    ],
+                    'lastCommentAt' => [
+                        'fieldName' => 'lastCommentAt',
+                        'type' => 'datetime',
+                        'columnName' => 'last_comment_at',
+                        'nullable' => true,
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'permalink' => 'permalink',
+                    'is_commentable' => 'isCommentable',
+                    'num_comments' => 'numComments',
+                    'last_comment_at' => 'lastCommentAt',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'permalink' => 'permalink',
+                    'isCommentable' => 'is_commentable',
+                    'numComments' => 'num_comments',
+                    'lastCommentAt' => 'last_comment_at',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'thread',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

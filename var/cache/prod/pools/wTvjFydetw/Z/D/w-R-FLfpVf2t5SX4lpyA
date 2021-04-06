@@ -1,0 +1,84 @@
+<?php //%255BFOS%255CCommentBundle%255CEntity%255CComment%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\AssignedGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\AssignedGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'FOS\\CommentBundle\\Entity\\Comment',
+            ],
+            'namespace' => [
+                'FOS\\CommentBundle\\Entity',
+            ],
+            'rootEntityName' => [
+                'FOS\\CommentBundle\\Entity\\Comment',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'fieldMappings' => [
+                [
+                    'body' => [
+                        'fieldName' => 'body',
+                        'type' => 'text',
+                        'columnName' => 'body',
+                    ],
+                    'ancestors' => [
+                        'fieldName' => 'ancestors',
+                        'type' => 'string',
+                        'columnName' => 'ancestors',
+                        'length' => 1024,
+                        'nullable' => false,
+                    ],
+                    'depth' => [
+                        'fieldName' => 'depth',
+                        'type' => 'integer',
+                        'columnName' => 'depth',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                    ],
+                    'state' => [
+                        'fieldName' => 'state',
+                        'type' => 'integer',
+                        'columnName' => 'state',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'body' => 'body',
+                    'ancestors' => 'ancestors',
+                    'depth' => 'depth',
+                    'created_at' => 'createdAt',
+                    'state' => 'state',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'body' => 'body',
+                    'ancestors' => 'ancestors',
+                    'depth' => 'depth',
+                    'createdAt' => 'created_at',
+                    'state' => 'state',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'comment',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

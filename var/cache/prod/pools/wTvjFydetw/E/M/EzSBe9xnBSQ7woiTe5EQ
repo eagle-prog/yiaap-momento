@@ -1,0 +1,108 @@
+<?php //%255Ba24883b9850aac84d82ff38d196dbf8d%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'enabled' => [
+                        0,
+                    ],
+                    'gatewayFactoryName' => [
+                        1,
+                    ],
+                    'pointOfSale' => [
+                        2,
+                    ],
+                    'free' => [
+                        3,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT DISTINCT e0_.gateway_name AS gateway_name_0, e0_.factory_name AS factory_name_1, e0_.config AS config_2, e0_.id AS id_3, e0_.name AS name_4, e0_.slug AS slug_5, e0_.gateway_logo_name AS gateway_logo_name_6, e0_.enabled AS enabled_7, e0_.number AS number_8, e0_.updated_at AS updated_at_9, e0_.organizer_id AS organizer_id_10 FROM eventic_payment_gateway e0_ WHERE e0_.organizer_id IS NULL AND e0_.enabled = ? AND e0_.factory_name = ? AND e0_.slug <> ? AND e0_.slug <> ? ORDER BY e0_.number ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'p' => 'App\\Entity\\PaymentGateway',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'gateway_name_0' => 'gatewayName',
+                    'factory_name_1' => 'factoryName',
+                    'config_2' => 'config',
+                    'id_3' => 'id',
+                    'name_4' => 'name',
+                    'slug_5' => 'slug',
+                    'gateway_logo_name_6' => 'gatewayLogoName',
+                    'enabled_7' => 'enabled',
+                    'number_8' => 'number',
+                    'updated_at_9' => 'updatedAt',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'organizer_id_10' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'p' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'organizer_id_10' => 'organizer_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'gateway_name_0' => 'p',
+                    'factory_name_1' => 'p',
+                    'config_2' => 'p',
+                    'id_3' => 'p',
+                    'name_4' => 'p',
+                    'slug_5' => 'p',
+                    'gateway_logo_name_6' => 'p',
+                    'enabled_7' => 'p',
+                    'number_8' => 'p',
+                    'updated_at_9' => 'p',
+                    'organizer_id_10' => 'p',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'gateway_name_0' => 'App\\Entity\\PaymentGateway',
+                    'factory_name_1' => 'App\\Entity\\PaymentGateway',
+                    'config_2' => 'App\\Entity\\PaymentGateway',
+                    'id_3' => 'App\\Entity\\PaymentGateway',
+                    'name_4' => 'App\\Entity\\PaymentGateway',
+                    'slug_5' => 'App\\Entity\\PaymentGateway',
+                    'gateway_logo_name_6' => 'App\\Entity\\PaymentGateway',
+                    'enabled_7' => 'App\\Entity\\PaymentGateway',
+                    'number_8' => 'App\\Entity\\PaymentGateway',
+                    'updated_at_9' => 'App\\Entity\\PaymentGateway',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

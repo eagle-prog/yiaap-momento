@@ -1,0 +1,102 @@
+<?php //%255B8b7424a3dd825a068edbe225180f7865%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'event' => [
+                        0,
+                    ],
+                    'visible' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT DISTINCT e0_.id AS id_0, e0_.rating AS rating_1, e0_.headline AS headline_2, e0_.slug AS slug_3, e0_.details AS details_4, e0_.created_at AS created_at_5, e0_.updated_at AS updated_at_6, e0_.deleted_at AS deleted_at_7, e0_.visible AS visible_8, e0_.event_id AS event_id_9, e0_.user_id AS user_id_10 FROM eventic_review e0_ LEFT JOIN eventic_event e1_ ON e0_.event_id = e1_.id LEFT JOIN eventic_event_translation e2_ ON e1_.id = e2_.translatable_id WHERE e2_.slug = ? AND e0_.visible = ? ORDER BY e0_.created_at DESC LIMIT 8',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'r' => 'App\\Entity\\Review',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'rating_1' => 'rating',
+                    'headline_2' => 'headline',
+                    'slug_3' => 'slug',
+                    'details_4' => 'details',
+                    'created_at_5' => 'createdAt',
+                    'updated_at_6' => 'updatedAt',
+                    'deleted_at_7' => 'deletedAt',
+                    'visible_8' => 'visible',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'event_id_9' => 'integer',
+                    'user_id_10' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'r' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'event_id_9' => 'event_id',
+                    'user_id_10' => 'user_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'r',
+                    'rating_1' => 'r',
+                    'headline_2' => 'r',
+                    'slug_3' => 'r',
+                    'details_4' => 'r',
+                    'created_at_5' => 'r',
+                    'updated_at_6' => 'r',
+                    'deleted_at_7' => 'r',
+                    'visible_8' => 'r',
+                    'event_id_9' => 'r',
+                    'user_id_10' => 'r',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Review',
+                    'rating_1' => 'App\\Entity\\Review',
+                    'headline_2' => 'App\\Entity\\Review',
+                    'slug_3' => 'App\\Entity\\Review',
+                    'details_4' => 'App\\Entity\\Review',
+                    'created_at_5' => 'App\\Entity\\Review',
+                    'updated_at_6' => 'App\\Entity\\Review',
+                    'deleted_at_7' => 'App\\Entity\\Review',
+                    'visible_8' => 'App\\Entity\\Review',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

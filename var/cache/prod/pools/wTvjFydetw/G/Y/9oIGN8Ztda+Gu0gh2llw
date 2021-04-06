@@ -1,0 +1,105 @@
+<?php //%255Bf2a4d76d591b542b28087752acc0410d%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'hidden' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT DISTINCT e0_.id AS id_0, e0_.readtime AS readtime_1, e0_.image_name AS image_name_2, e0_.image_size AS image_size_3, e0_.image_mime_type AS image_mime_type_4, e0_.image_original_name AS image_original_name_5, e0_.image_dimensions AS image_dimensions_6, e0_.views AS views_7, e0_.hidden AS hidden_8, e0_.created_at AS created_at_9, e0_.updated_at AS updated_at_10, e0_.deleted_at AS deleted_at_11, e0_.category_id AS category_id_12 FROM eventic_blog_post e0_ WHERE e0_.hidden = ? ORDER BY e0_.created_at DESC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'b' => 'App\\Entity\\BlogPost',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'readtime_1' => 'readtime',
+                    'image_name_2' => 'imageName',
+                    'image_size_3' => 'imageSize',
+                    'image_mime_type_4' => 'imageMimeType',
+                    'image_original_name_5' => 'imageOriginalName',
+                    'image_dimensions_6' => 'imageDimensions',
+                    'views_7' => 'views',
+                    'hidden_8' => 'hidden',
+                    'created_at_9' => 'createdAt',
+                    'updated_at_10' => 'updatedAt',
+                    'deleted_at_11' => 'deletedAt',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'category_id_12' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'b' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'category_id_12' => 'category_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'b',
+                    'readtime_1' => 'b',
+                    'image_name_2' => 'b',
+                    'image_size_3' => 'b',
+                    'image_mime_type_4' => 'b',
+                    'image_original_name_5' => 'b',
+                    'image_dimensions_6' => 'b',
+                    'views_7' => 'b',
+                    'hidden_8' => 'b',
+                    'created_at_9' => 'b',
+                    'updated_at_10' => 'b',
+                    'deleted_at_11' => 'b',
+                    'category_id_12' => 'b',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\BlogPost',
+                    'readtime_1' => 'App\\Entity\\BlogPost',
+                    'image_name_2' => 'App\\Entity\\BlogPost',
+                    'image_size_3' => 'App\\Entity\\BlogPost',
+                    'image_mime_type_4' => 'App\\Entity\\BlogPost',
+                    'image_original_name_5' => 'App\\Entity\\BlogPost',
+                    'image_dimensions_6' => 'App\\Entity\\BlogPost',
+                    'views_7' => 'App\\Entity\\BlogPost',
+                    'hidden_8' => 'App\\Entity\\BlogPost',
+                    'created_at_9' => 'App\\Entity\\BlogPost',
+                    'updated_at_10' => 'App\\Entity\\BlogPost',
+                    'deleted_at_11' => 'App\\Entity\\BlogPost',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

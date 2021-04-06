@@ -1,0 +1,49 @@
+<?php //%255Bdb8af51bee1a6455ed50318c7c93b70b%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'status' => [
+                        0,
+                    ],
+                    'organizer' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT COUNT(DISTINCT e0_.id) AS sclr_0 FROM eventic_order e0_ LEFT JOIN eventic_order_element e1_ ON e0_.id = e1_.order_id AND (e1_.deleted_at IS NULL) LEFT JOIN eventic_event_date_ticket e2_ ON e1_.eventticket_id = e2_.id LEFT JOIN eventic_event_date e3_ ON e2_.eventdate_id = e3_.id LEFT JOIN eventic_event e4_ ON e3_.event_id = e4_.id AND (e4_.deleted_at IS NULL) LEFT JOIN eventic_organizer e5_ ON e4_.organizer_id = e5_.id AND (e5_.deleted_at IS NULL) WHERE (e0_.status = ? AND e5_.slug = ?) AND (e0_.deleted_at IS NULL) ORDER BY e0_.created_at DESC',
+            ],
+        ],
+        'stdClass' => [
+            'scalarMappings' => [
+                2 => [
+                    'sclr_0' => 1,
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'sclr_0' => 'string',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

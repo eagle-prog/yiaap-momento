@@ -1,0 +1,102 @@
+<?php //%255BPayum%255CCore%255CModel%255CPayment%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\AssignedGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\AssignedGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Payum\\Core\\Model\\Payment',
+            ],
+            'namespace' => [
+                'Payum\\Core\\Model',
+            ],
+            'rootEntityName' => [
+                'Payum\\Core\\Model\\Payment',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'fieldMappings' => [
+                [
+                    'number' => [
+                        'fieldName' => 'number',
+                        'type' => 'string',
+                        'columnName' => 'number',
+                        'nullable' => true,
+                    ],
+                    'description' => [
+                        'fieldName' => 'description',
+                        'type' => 'string',
+                        'columnName' => 'description',
+                        'nullable' => true,
+                    ],
+                    'clientEmail' => [
+                        'fieldName' => 'clientEmail',
+                        'type' => 'string',
+                        'columnName' => 'client_email',
+                        'nullable' => true,
+                    ],
+                    'clientId' => [
+                        'fieldName' => 'clientId',
+                        'type' => 'string',
+                        'columnName' => 'client_id',
+                        'nullable' => true,
+                    ],
+                    'totalAmount' => [
+                        'fieldName' => 'totalAmount',
+                        'type' => 'integer',
+                        'columnName' => 'total_amount',
+                        'nullable' => true,
+                    ],
+                    'currencyCode' => [
+                        'fieldName' => 'currencyCode',
+                        'type' => 'string',
+                        'columnName' => 'currency_code',
+                        'nullable' => true,
+                    ],
+                    'details' => [
+                        'fieldName' => 'details',
+                        'type' => 'json_array',
+                        'columnName' => 'details',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'number' => 'number',
+                    'description' => 'description',
+                    'client_email' => 'clientEmail',
+                    'client_id' => 'clientId',
+                    'total_amount' => 'totalAmount',
+                    'currency_code' => 'currencyCode',
+                    'details' => 'details',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'number' => 'number',
+                    'description' => 'description',
+                    'clientEmail' => 'client_email',
+                    'clientId' => 'client_id',
+                    'totalAmount' => 'total_amount',
+                    'currencyCode' => 'currency_code',
+                    'details' => 'details',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'payment',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

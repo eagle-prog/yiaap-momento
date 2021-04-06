@@ -1,0 +1,64 @@
+parameters:
+    debril.provider.default.class: Debril\RssAtomBundle\Provider\MockProvider
+    debril.rss_atom.provider.class: '%debril.provider.default.class%'
+    debril.provider.doctrine.class: Debril\RssAtomBundle\Provider\DoctrineFeedContentProvider
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    guzzle.client:
+        class: GuzzleHttp\Client
+
+    feedio.client:
+        class: FeedIo\Adapter\Guzzle\Client
+        arguments: ["@guzzle.client"]
+
+    feedio:
+        public: true
+        class: FeedIo\FeedIo
+        arguments: ["@feedio.client", "@logger"]
+        calls:
+          - method: addDateFormats
+            arguments:
+              - '%debril_rss_atom.date_formats%'
+
+    FeedIo\FeedIo:
+        public: true
+        alias: feedio
+
+    debril.rss_atom.response.headers:
+        class: Debril\RssAtomBundle\Response\HeadersBuilder
+        arguments: ["%debril_rss_atom.public_feeds%"]
+        calls:
+            - method: setContentType
+              arguments:
+                - "json"
+                - "%debril_rss_atom.content_type_json%"
+            - method: setContentType
+              arguments:
+                - "xml"
+                - "%debril_rss_atom.content_type_xml%"
+
+    Debril\RssAtomBundle\Request\ModifiedSince: ~
+
+    Debril\RssAtomBundle\Response\FeedBuilder:
+      bind:
+        $forceRefresh: "%debril_rss_atom.force_refresh%"
+
+    Debril\RssAtomBundle\Response\HeadersBuilder:
+      alias: debril.rss_atom.response.headers
+
+    debril.rss_atom.provider:
+        class: '%debril.rss_atom.provider.class%'
+
+    debril.provider.default:
+        alias: debril.rss_atom.provider
+
+    Debril\RssAtomBundle\Provider\FeedProviderInterface:
+        alias: debril.rss_atom.provider
+
+    Debril\RssAtomBundle\Controller\StreamController:
+        public: false
+        tags: ['controller.service_arguments']

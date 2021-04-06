@@ -1,0 +1,81 @@
+<?php //%255Bdd9b13cade0b13aed288bef62249a115%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'organizer' => [
+                        0,
+                    ],
+                    'enabled' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT e0_.id AS id_0, e0_.name AS name_1, e0_.organizer_id AS organizer_id_2, e0_.user_id AS user_id_3 FROM eventic_scanner e0_ LEFT JOIN eventic_user e1_ ON e0_.user_id = e1_.id AND (e1_.deleted_at IS NULL) WHERE e0_.organizer_id = ? AND e1_.enabled = ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    's' => 'App\\Entity\\Scanner',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'name_1' => 'name',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'organizer_id_2' => 'integer',
+                    'user_id_3' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    's' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'organizer_id_2' => 'organizer_id',
+                    'user_id_3' => 'user_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 's',
+                    'name_1' => 's',
+                    'organizer_id_2' => 's',
+                    'user_id_3' => 's',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Scanner',
+                    'name_1' => 'App\\Entity\\Scanner',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

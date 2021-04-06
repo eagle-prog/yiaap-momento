@@ -1,0 +1,166 @@
+<?php //%255BApp%255CEntity%255CHelpCenterArticleTranslation%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\HelpCenterArticleTranslation',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\HelpCenterArticleTranslation',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\HelpCenterArticleTranslationRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'title' => [
+                        'fieldName' => 'title',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 80,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'title',
+                    ],
+                    'slug' => [
+                        'fieldName' => 'slug',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 100,
+                        'unique' => true,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'slug',
+                    ],
+                    'content' => [
+                        'fieldName' => 'content',
+                        'type' => 'text',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'content',
+                    ],
+                    'tags' => [
+                        'fieldName' => 'tags',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 150,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'tags',
+                    ],
+                    'locale' => [
+                        'fieldName' => 'locale',
+                        'type' => 'string',
+                        'columnName' => 'locale',
+                    ],
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'title' => 'title',
+                    'slug' => 'slug',
+                    'content' => 'content',
+                    'tags' => 'tags',
+                    'locale' => 'locale',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'title' => 'title',
+                    'slug' => 'slug',
+                    'content' => 'content',
+                    'tags' => 'tags',
+                    'locale' => 'locale',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'eventic_help_center_article_translation',
+                    'uniqueConstraints' => [
+                        'eventic_help_center_article_translation_unique_translation' => [
+                            'columns' => [
+                                'translatable_id',
+                                'locale',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'translatable' => [
+                        'fieldName' => 'translatable',
+                        'inversedBy' => 'translations',
+                        'cascade' => [
+                            'persist',
+                            'merge',
+                        ],
+                        'fetch' => 2,
+                        'joinColumns' => [
+                            [
+                                'name' => 'translatable_id',
+                                'referencedColumnName' => 'id',
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'targetEntity' => 'App\\Entity\\HelpCenterArticle',
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\HelpCenterArticleTranslation',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => true,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'translatable_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'translatable_id' => 'translatable_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'translatable_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

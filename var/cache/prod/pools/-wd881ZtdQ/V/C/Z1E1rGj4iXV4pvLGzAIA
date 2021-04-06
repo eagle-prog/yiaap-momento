@@ -1,0 +1,490 @@
+<?php //App.Entity.Venue
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\Length'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Length')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\Length'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\Length'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\Length'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\NotNull'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotNull')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotNull'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotNull'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\Length'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\Length'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotBlank'],
+        clone $p['Symfony\\Component\\Validator\\Constraints\\Length'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotBlank'],
+        clone $p['Symfony\\Component\\Validator\\Constraints\\Length'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotBlank'],
+        clone $p['Symfony\\Component\\Validator\\Constraints\\Length'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotNull'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotNull'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\Length'],
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\Callback'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Callback')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Venue',
+                'translations',
+                'neighborhoods',
+                4 => 'foodbeverage',
+                6 => 'pricing',
+                8 => 'availibility',
+                10 => 'hidden',
+                12 => 'showmap',
+                14 => 'quoteform',
+                16 => 'street',
+                19 => 'street2',
+                21 => 'city',
+                24 => 'state',
+                27 => 'postalcode',
+                30 => 'country',
+                32 => 'listedondirectory',
+                34 => 'contactemail',
+            ],
+            'defaultGroup' => [
+                'Venue',
+            ],
+            'members' => [
+                [
+                    'translations' => [
+                        $o[1],
+                    ],
+                    'neighborhoods' => [
+                        $o[2],
+                    ],
+                    'foodbeverage' => [
+                        $o[4],
+                    ],
+                    'pricing' => [
+                        $o[6],
+                    ],
+                    'availibility' => [
+                        $o[8],
+                    ],
+                    'hidden' => [
+                        $o[10],
+                    ],
+                    'showmap' => [
+                        $o[12],
+                    ],
+                    'quoteform' => [
+                        $o[14],
+                    ],
+                    'street' => [
+                        $o[16],
+                    ],
+                    'street2' => [
+                        $o[19],
+                    ],
+                    'city' => [
+                        $o[21],
+                    ],
+                    'state' => [
+                        $o[24],
+                    ],
+                    'postalcode' => [
+                        $o[27],
+                    ],
+                    'country' => [
+                        $o[30],
+                    ],
+                    'listedondirectory' => [
+                        $o[32],
+                    ],
+                    'contactemail' => [
+                        $o[34],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'translations' => $o[1],
+                    'neighborhoods' => $o[2],
+                    'foodbeverage' => $o[4],
+                    'pricing' => $o[6],
+                    'availibility' => $o[8],
+                    'hidden' => $o[10],
+                    'showmap' => $o[12],
+                    'quoteform' => $o[14],
+                    'street' => $o[16],
+                    'street2' => $o[19],
+                    'city' => $o[21],
+                    'state' => $o[24],
+                    'postalcode' => $o[27],
+                    'country' => $o[30],
+                    'listedondirectory' => $o[32],
+                    'contactemail' => $o[34],
+                ],
+            ],
+            'constraints' => [
+                [
+                    $o[36],
+                ],
+                2 => [
+                    $o[3],
+                ],
+                4 => [
+                    $o[5],
+                ],
+                6 => [
+                    $o[7],
+                ],
+                8 => [
+                    $o[9],
+                ],
+                10 => [
+                    $o[11],
+                ],
+                12 => [
+                    $o[13],
+                ],
+                14 => [
+                    $o[15],
+                ],
+                16 => [
+                    $o[17],
+                    $o[18],
+                ],
+                19 => [
+                    $o[20],
+                ],
+                21 => [
+                    $o[22],
+                    $o[23],
+                ],
+                24 => [
+                    $o[25],
+                    $o[26],
+                ],
+                27 => [
+                    $o[28],
+                    $o[29],
+                ],
+                30 => [
+                    $o[31],
+                ],
+                32 => [
+                    $o[33],
+                ],
+                34 => [
+                    $o[35],
+                ],
+            ],
+            'constraintsByGroup' => [
+                [
+                    'Default' => [
+                        $o[36],
+                    ],
+                    'Venue' => [
+                        $o[36],
+                    ],
+                ],
+                2 => [
+                    'Default' => [
+                        $o[3],
+                    ],
+                    'Venue' => [
+                        $o[3],
+                    ],
+                ],
+                4 => [
+                    'Default' => [
+                        $o[5],
+                    ],
+                    'Venue' => [
+                        $o[5],
+                    ],
+                ],
+                6 => [
+                    'Default' => [
+                        $o[7],
+                    ],
+                    'Venue' => [
+                        $o[7],
+                    ],
+                ],
+                8 => [
+                    'Default' => [
+                        $o[9],
+                    ],
+                    'Venue' => [
+                        $o[9],
+                    ],
+                ],
+                10 => [
+                    'Default' => [
+                        $o[11],
+                    ],
+                    'Venue' => [
+                        $o[11],
+                    ],
+                ],
+                12 => [
+                    'Default' => [
+                        $o[13],
+                    ],
+                    'Venue' => [
+                        $o[13],
+                    ],
+                ],
+                14 => [
+                    'Default' => [
+                        $o[15],
+                    ],
+                    'Venue' => [
+                        $o[15],
+                    ],
+                ],
+                16 => [
+                    'Default' => [
+                        $o[17],
+                        $o[18],
+                    ],
+                    'Venue' => [
+                        $o[17],
+                        $o[18],
+                    ],
+                ],
+                19 => [
+                    'Default' => [
+                        $o[20],
+                    ],
+                    'Venue' => [
+                        $o[20],
+                    ],
+                ],
+                21 => [
+                    'Default' => [
+                        $o[22],
+                        $o[23],
+                    ],
+                    'Venue' => [
+                        $o[22],
+                        $o[23],
+                    ],
+                ],
+                24 => [
+                    'Default' => [
+                        $o[25],
+                        $o[26],
+                    ],
+                    'Venue' => [
+                        $o[25],
+                        $o[26],
+                    ],
+                ],
+                27 => [
+                    'Default' => [
+                        $o[28],
+                        $o[29],
+                    ],
+                    'Venue' => [
+                        $o[28],
+                        $o[29],
+                    ],
+                ],
+                30 => [
+                    'Default' => [
+                        $o[31],
+                    ],
+                    'Venue' => [
+                        $o[31],
+                    ],
+                ],
+                32 => [
+                    'Default' => [
+                        $o[33],
+                    ],
+                    'Venue' => [
+                        $o[33],
+                    ],
+                ],
+                34 => [
+                    'Default' => [
+                        $o[35],
+                    ],
+                    'Venue' => [
+                        $o[35],
+                    ],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\Venue',
+                'App\\Entity\\Venue',
+                4 => 'App\\Entity\\Venue',
+                6 => 'App\\Entity\\Venue',
+                8 => 'App\\Entity\\Venue',
+                10 => 'App\\Entity\\Venue',
+                12 => 'App\\Entity\\Venue',
+                14 => 'App\\Entity\\Venue',
+                16 => 'App\\Entity\\Venue',
+                19 => 'App\\Entity\\Venue',
+                21 => 'App\\Entity\\Venue',
+                24 => 'App\\Entity\\Venue',
+                27 => 'App\\Entity\\Venue',
+                30 => 'App\\Entity\\Venue',
+                32 => 'App\\Entity\\Venue',
+                34 => 'App\\Entity\\Venue',
+            ],
+            'property' => [
+                1 => 'translations',
+                'neighborhoods',
+                4 => 'foodbeverage',
+                6 => 'pricing',
+                8 => 'availibility',
+                10 => 'hidden',
+                12 => 'showmap',
+                14 => 'quoteform',
+                16 => 'street',
+                19 => 'street2',
+                21 => 'city',
+                24 => 'state',
+                27 => 'postalcode',
+                30 => 'country',
+                32 => 'listedondirectory',
+                34 => 'contactemail',
+            ],
+            'cascadingStrategy' => [
+                1 => 2,
+            ],
+            'traversalStrategy' => [
+                1 => 1,
+            ],
+            'max' => [
+                3 => 100,
+                5 => 500,
+                7 => 500,
+                9 => 500,
+                18 => 50,
+                20 => 50,
+                23 => 50,
+                26 => 50,
+                29 => 15,
+                35 => 50,
+            ],
+            'groups' => [
+                3 => [
+                    'Default',
+                    'Venue',
+                ],
+                5 => [
+                    'Default',
+                    'Venue',
+                ],
+                7 => [
+                    'Default',
+                    'Venue',
+                ],
+                9 => [
+                    'Default',
+                    'Venue',
+                ],
+                11 => [
+                    'Default',
+                    'Venue',
+                ],
+                13 => [
+                    'Default',
+                    'Venue',
+                ],
+                15 => [
+                    'Default',
+                    'Venue',
+                ],
+                17 => [
+                    'Default',
+                    'Venue',
+                ],
+                [
+                    'Default',
+                    'Venue',
+                ],
+                20 => [
+                    'Default',
+                    'Venue',
+                ],
+                22 => [
+                    'Default',
+                    'Venue',
+                ],
+                [
+                    'Default',
+                    'Venue',
+                ],
+                25 => [
+                    'Default',
+                    'Venue',
+                ],
+                [
+                    'Default',
+                    'Venue',
+                ],
+                28 => [
+                    'Default',
+                    'Venue',
+                ],
+                [
+                    'Default',
+                    'Venue',
+                ],
+                31 => [
+                    'Default',
+                    'Venue',
+                ],
+                33 => [
+                    'Default',
+                    'Venue',
+                ],
+                35 => [
+                    'Default',
+                    'Venue',
+                ],
+                [
+                    'Default',
+                    'Venue',
+                ],
+            ],
+            'min' => [
+                18 => 2,
+                23 => 2,
+                26 => 2,
+                29 => 2,
+            ],
+            'allowEmptyString' => [
+                18 => false,
+                23 => false,
+                26 => false,
+                29 => false,
+            ],
+            'callback' => [
+                36 => [
+                    'App\\Validation\\Validator',
+                    'validate',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

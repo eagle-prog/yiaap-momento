@@ -1,0 +1,108 @@
+<?php //%255Bb70858e73aa8c51d36c2c3436b9bfef1%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'organizer' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT DISTINCT e0_.id AS id_0, e0_.reference AS reference_1, e0_.note AS note_2, e0_.status AS status_3, e0_.ticket_fee AS ticket_fee_4, e0_.ticket_price_percentage_cut AS ticket_price_percentage_cut_5, e0_.currency_ccy AS currency_ccy_6, e0_.currency_symbol AS currency_symbol_7, e0_.created_at AS created_at_8, e0_.updated_at AS updated_at_9, e0_.deleted_at AS deleted_at_10, e0_.user_id AS user_id_11, e0_.paymentgateway_id AS paymentgateway_id_12, e0_.payment_id AS payment_id_13 FROM eventic_order e0_ LEFT JOIN eventic_order_element e1_ ON e0_.id = e1_.order_id AND (e1_.deleted_at IS NULL) LEFT JOIN eventic_event_date_ticket e2_ ON e1_.eventticket_id = e2_.id LEFT JOIN eventic_event_date e3_ ON e2_.eventdate_id = e3_.id LEFT JOIN eventic_event e4_ ON e3_.event_id = e4_.id AND (e4_.deleted_at IS NULL) LEFT JOIN eventic_organizer e5_ ON e4_.organizer_id = e5_.id AND (e5_.deleted_at IS NULL) WHERE (e5_.slug = ?) AND (e0_.deleted_at IS NULL) ORDER BY e0_.created_at DESC LIMIT 3',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'o' => 'App\\Entity\\Order',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'reference_1' => 'reference',
+                    'note_2' => 'note',
+                    'status_3' => 'status',
+                    'ticket_fee_4' => 'ticketFee',
+                    'ticket_price_percentage_cut_5' => 'ticketPricePercentageCut',
+                    'currency_ccy_6' => 'currencyCcy',
+                    'currency_symbol_7' => 'currencySymbol',
+                    'created_at_8' => 'createdAt',
+                    'updated_at_9' => 'updatedAt',
+                    'deleted_at_10' => 'deletedAt',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'user_id_11' => 'integer',
+                    'paymentgateway_id_12' => 'integer',
+                    'payment_id_13' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'o' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'user_id_11' => 'user_id',
+                    'paymentgateway_id_12' => 'paymentgateway_id',
+                    'payment_id_13' => 'payment_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'o',
+                    'reference_1' => 'o',
+                    'note_2' => 'o',
+                    'status_3' => 'o',
+                    'ticket_fee_4' => 'o',
+                    'ticket_price_percentage_cut_5' => 'o',
+                    'currency_ccy_6' => 'o',
+                    'currency_symbol_7' => 'o',
+                    'created_at_8' => 'o',
+                    'updated_at_9' => 'o',
+                    'deleted_at_10' => 'o',
+                    'user_id_11' => 'o',
+                    'paymentgateway_id_12' => 'o',
+                    'payment_id_13' => 'o',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Order',
+                    'reference_1' => 'App\\Entity\\Order',
+                    'note_2' => 'App\\Entity\\Order',
+                    'status_3' => 'App\\Entity\\Order',
+                    'ticket_fee_4' => 'App\\Entity\\Order',
+                    'ticket_price_percentage_cut_5' => 'App\\Entity\\Order',
+                    'currency_ccy_6' => 'App\\Entity\\Order',
+                    'currency_symbol_7' => 'App\\Entity\\Order',
+                    'created_at_8' => 'App\\Entity\\Order',
+                    'updated_at_9' => 'App\\Entity\\Order',
+                    'deleted_at_10' => 'App\\Entity\\Order',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

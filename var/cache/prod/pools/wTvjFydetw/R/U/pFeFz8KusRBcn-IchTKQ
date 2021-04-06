@@ -1,0 +1,101 @@
+<?php //%255BApp%255CEntity%255CThread%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\AssignedGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\AssignedGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Thread',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Thread',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\ThreadRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'fieldMappings' => [
+                [
+                    'permalink' => [
+                        'fieldName' => 'permalink',
+                        'type' => 'string',
+                        'columnName' => 'permalink',
+                        'declared' => 'FOS\\CommentBundle\\Entity\\Thread',
+                    ],
+                    'isCommentable' => [
+                        'fieldName' => 'isCommentable',
+                        'type' => 'boolean',
+                        'columnName' => 'is_commentable',
+                        'declared' => 'FOS\\CommentBundle\\Entity\\Thread',
+                    ],
+                    'numComments' => [
+                        'fieldName' => 'numComments',
+                        'type' => 'integer',
+                        'columnName' => 'num_comments',
+                        'declared' => 'FOS\\CommentBundle\\Entity\\Thread',
+                    ],
+                    'lastCommentAt' => [
+                        'fieldName' => 'lastCommentAt',
+                        'type' => 'datetime',
+                        'columnName' => 'last_comment_at',
+                        'nullable' => true,
+                        'declared' => 'FOS\\CommentBundle\\Entity\\Thread',
+                    ],
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'permalink' => 'permalink',
+                    'is_commentable' => 'isCommentable',
+                    'num_comments' => 'numComments',
+                    'last_comment_at' => 'lastCommentAt',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'permalink' => 'permalink',
+                    'isCommentable' => 'is_commentable',
+                    'numComments' => 'num_comments',
+                    'lastCommentAt' => 'last_comment_at',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'eventic_thread',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'changeTrackingPolicy' => [
+                2,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

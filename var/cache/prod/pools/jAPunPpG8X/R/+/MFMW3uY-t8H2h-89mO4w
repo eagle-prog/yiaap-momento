@@ -1,0 +1,62 @@
+<?php //%255BApp%255CEntity%255CUser%2524avatarFile%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Vich\\UploaderBundle\\Mapping\\Annotation\\UploadableField'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Vich\\UploaderBundle\\Mapping\\Annotation\\UploadableField')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\File'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\File')),
+    ],
+    null,
+    [
+        'Vich\\UploaderBundle\\Mapping\\Annotation\\UploadableField' => [
+            'mapping' => [
+                'user_avatar',
+            ],
+            'fileNameProperty' => [
+                'avatarName',
+            ],
+            'size' => [
+                'avatarSize',
+            ],
+            'mimeType' => [
+                'avatarMimeType',
+            ],
+            'originalName' => [
+                'avatarOriginalName',
+            ],
+            'dimensions' => [
+                'avatarDimensions',
+            ],
+        ],
+        'stdClass' => [
+            'binaryFormat' => [
+                1 => false,
+            ],
+            'mimeTypes' => [
+                1 => [
+                    'image/jpeg',
+                    'image/jpg',
+                    'image/gif',
+                    'image/png',
+                ],
+            ],
+            'mimeTypesMessage' => [
+                1 => 'The file should be an image',
+            ],
+            'groups' => [
+                1 => [
+                    'Default',
+                ],
+            ],
+        ],
+        'Symfony\\Component\\Validator\\Constraints\\File' => [
+            'maxSize' => [
+                1 => 2000000,
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

@@ -1,0 +1,79 @@
+<?php //%255B4eaa0d1e151426630806005c0ee3588b%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'hidden' => [
+                        0,
+                    ],
+                    'ORMQueryBuilderLoader_getEntitiesByIds_id' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT DISTINCT e0_.id AS id_0, e0_.code AS code_1, e0_.hidden AS hidden_2, e0_.created_at AS created_at_3, e0_.updated_at AS updated_at_4, e0_.deleted_at AS deleted_at_5 FROM eventic_language e0_ INNER JOIN eventic_language_translation e1_ ON e0_.id = e1_.translatable_id WHERE (e0_.hidden = ? AND e0_.id IN (?)) AND (e0_.deleted_at IS NULL) ORDER BY e1_.name ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'l' => 'App\\Entity\\Language',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'code_1' => 'code',
+                    'hidden_2' => 'hidden',
+                    'created_at_3' => 'createdAt',
+                    'updated_at_4' => 'updatedAt',
+                    'deleted_at_5' => 'deletedAt',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'l' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'l',
+                    'code_1' => 'l',
+                    'hidden_2' => 'l',
+                    'created_at_3' => 'l',
+                    'updated_at_4' => 'l',
+                    'deleted_at_5' => 'l',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Language',
+                    'code_1' => 'App\\Entity\\Language',
+                    'hidden_2' => 'App\\Entity\\Language',
+                    'created_at_3' => 'App\\Entity\\Language',
+                    'updated_at_4' => 'App\\Entity\\Language',
+                    'deleted_at_5' => 'App\\Entity\\Language',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

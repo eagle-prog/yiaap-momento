@@ -1,0 +1,68 @@
+<?php //App.Entity.MenuElementTranslation
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Validator\\Constraints\\Length'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Length')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\MenuElementTranslation',
+                'label',
+            ],
+            'defaultGroup' => [
+                'MenuElementTranslation',
+            ],
+            'members' => [
+                [
+                    'label' => [
+                        $o[1],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'label' => $o[1],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\MenuElementTranslation',
+            ],
+            'property' => [
+                1 => 'label',
+            ],
+            'constraints' => [
+                1 => [
+                    $o[2],
+                ],
+            ],
+            'constraintsByGroup' => [
+                1 => [
+                    'Default' => [
+                        $o[2],
+                    ],
+                    'MenuElementTranslation' => [
+                        $o[2],
+                    ],
+                ],
+            ],
+            'max' => [
+                2 => 50,
+            ],
+            'min' => [
+                2 => 1,
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'MenuElementTranslation',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

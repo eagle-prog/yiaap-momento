@@ -1,0 +1,144 @@
+<?php //%255B0449c782fe8f565f414f40a041a6a59d%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'organizer' => [
+                        0,
+                    ],
+                    'dpid' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT DISTINCT e0_.id AS id_0, e0_.seatedguests AS seatedguests_1, e0_.standingguests AS standingguests_2, e0_.neighborhoods AS neighborhoods_3, e0_.foodbeverage AS foodbeverage_4, e0_.pricing AS pricing_5, e0_.availibility AS availibility_6, e0_.hidden AS hidden_7, e0_.showmap AS showmap_8, e0_.quoteform AS quoteform_9, e0_.street AS street_10, e0_.street2 AS street2_11, e0_.city AS city_12, e0_.state AS state_13, e0_.postalcode AS postalcode_14, e0_.lat AS lat_15, e0_.lng AS lng_16, e0_.listedondirectory AS listedondirectory_17, e0_.contactemail AS contactemail_18, e0_.created_at AS created_at_19, e0_.updated_at AS updated_at_20, e0_.deleted_at AS deleted_at_21, e0_.organizer_id AS organizer_id_22, e0_.type_id AS type_id_23, e0_.country_id AS country_id_24 FROM eventic_venue e0_ LEFT JOIN eventic_organizer e1_ ON e0_.organizer_id = e1_.id AND (e1_.deleted_at IS NULL) WHERE (e1_.slug = ? AND e0_.id IN (?)) AND (e0_.deleted_at IS NULL) ORDER BY e0_.created_at DESC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'v' => 'App\\Entity\\Venue',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'seatedguests_1' => 'seatedguests',
+                    'standingguests_2' => 'standingguests',
+                    'neighborhoods_3' => 'neighborhoods',
+                    'foodbeverage_4' => 'foodbeverage',
+                    'pricing_5' => 'pricing',
+                    'availibility_6' => 'availibility',
+                    'hidden_7' => 'hidden',
+                    'showmap_8' => 'showmap',
+                    'quoteform_9' => 'quoteform',
+                    'street_10' => 'street',
+                    'street2_11' => 'street2',
+                    'city_12' => 'city',
+                    'state_13' => 'state',
+                    'postalcode_14' => 'postalcode',
+                    'lat_15' => 'lat',
+                    'lng_16' => 'lng',
+                    'listedondirectory_17' => 'listedondirectory',
+                    'contactemail_18' => 'contactemail',
+                    'created_at_19' => 'createdAt',
+                    'updated_at_20' => 'updatedAt',
+                    'deleted_at_21' => 'deletedAt',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'organizer_id_22' => 'integer',
+                    'type_id_23' => 'integer',
+                    'country_id_24' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'v' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'organizer_id_22' => 'organizer_id',
+                    'type_id_23' => 'type_id',
+                    'country_id_24' => 'country_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'v',
+                    'seatedguests_1' => 'v',
+                    'standingguests_2' => 'v',
+                    'neighborhoods_3' => 'v',
+                    'foodbeverage_4' => 'v',
+                    'pricing_5' => 'v',
+                    'availibility_6' => 'v',
+                    'hidden_7' => 'v',
+                    'showmap_8' => 'v',
+                    'quoteform_9' => 'v',
+                    'street_10' => 'v',
+                    'street2_11' => 'v',
+                    'city_12' => 'v',
+                    'state_13' => 'v',
+                    'postalcode_14' => 'v',
+                    'lat_15' => 'v',
+                    'lng_16' => 'v',
+                    'listedondirectory_17' => 'v',
+                    'contactemail_18' => 'v',
+                    'created_at_19' => 'v',
+                    'updated_at_20' => 'v',
+                    'deleted_at_21' => 'v',
+                    'organizer_id_22' => 'v',
+                    'type_id_23' => 'v',
+                    'country_id_24' => 'v',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Venue',
+                    'seatedguests_1' => 'App\\Entity\\Venue',
+                    'standingguests_2' => 'App\\Entity\\Venue',
+                    'neighborhoods_3' => 'App\\Entity\\Venue',
+                    'foodbeverage_4' => 'App\\Entity\\Venue',
+                    'pricing_5' => 'App\\Entity\\Venue',
+                    'availibility_6' => 'App\\Entity\\Venue',
+                    'hidden_7' => 'App\\Entity\\Venue',
+                    'showmap_8' => 'App\\Entity\\Venue',
+                    'quoteform_9' => 'App\\Entity\\Venue',
+                    'street_10' => 'App\\Entity\\Venue',
+                    'street2_11' => 'App\\Entity\\Venue',
+                    'city_12' => 'App\\Entity\\Venue',
+                    'state_13' => 'App\\Entity\\Venue',
+                    'postalcode_14' => 'App\\Entity\\Venue',
+                    'lat_15' => 'App\\Entity\\Venue',
+                    'lng_16' => 'App\\Entity\\Venue',
+                    'listedondirectory_17' => 'App\\Entity\\Venue',
+                    'contactemail_18' => 'App\\Entity\\Venue',
+                    'created_at_19' => 'App\\Entity\\Venue',
+                    'updated_at_20' => 'App\\Entity\\Venue',
+                    'deleted_at_21' => 'App\\Entity\\Venue',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
