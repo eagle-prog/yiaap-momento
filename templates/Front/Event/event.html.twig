@@ -516,10 +516,10 @@
                                                     </div>
                                                     {% if not is_granted('IS_AUTHENTICATED_REMEMBERED') or is_granted('ROLE_ATTENDEE') %}
                                                         {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
-                                                            <a href="#" class="btn btn-primary btn-block mb-2 buy-tickets-modal-button" data-toggle="modal" data-target="#buy-tickets-modal-eventDate-{{ eventDate.reference }}"><i class="fas fa-ticket-alt"></i> {{ "Tickets"|trans }}</a>
+                                                            <a href="#" class="btn btn-primary btn-block mb-2 buy-tickets-modal-button" data-toggle="modal" data-target="#buy-tickets-modal-eventDate-{{ eventDate.reference }}"><i class="fas fa-ticket-alt"></i> {{ "Buy Tickets"|trans }}</a>
                                                             {% include "Dashboard/Attendee/Cart/add-to-cart-modal.html.twig" with { eventdate: eventDate } %}
                                                         {% else %}
-                                                            <a href="{{ path('fos_user_security_login')~'?_target_path='~app.request.getPathInfo }}" class="btn btn-primary btn-block"><i class="fas fa-ticket-alt"></i> {{ "Tickets"|trans }}</a>
+                                                            <a href="{{ path('fos_user_security_login')~'?_target_path='~app.request.getPathInfo }}" class="btn btn-primary btn-block"><i class="fas fa-ticket-alt"></i> {{ "Buy Tickets"|trans }}</a>
                                                         {% endif %}
                                                     {% endif %}
                                                 </dd>
