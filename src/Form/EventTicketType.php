@@ -81,14 +81,14 @@ class EventTicketType extends AbstractType {
                 ])
                 ->add('salesstartdate', DateTimeType::class, [
                     'required' => false,
-                    'label' => 'Sale starts On',
+                    'label' => 'Sale starts On (you can add a date or even better, leave this empty)',
                     'widget' => 'single_text',
                     'html5' => false,
                     'attr' => ['class' => 'datetimepicker']
                 ])
                 ->add('salesenddate', DateTimeType::class, [
                     'required' => false,
-                    'label' => 'Sale ends On',
+                    'label' => 'Sale ends On (you can add a date or even better, leave this empty)',
                     'widget' => 'single_text',
                     'html5' => false,
                     'attr' => ['class' => 'datetimepicker']])

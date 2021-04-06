@@ -43,14 +43,14 @@ class EventDateType extends AbstractType {
                 ])
                 ->add('startdate', DateTimeType::class, [
                     'required' => true,
-                    'label' => 'Starts On',
+                    'label' => 'Starts On (When will this event start?)',
                     'widget' => 'single_text',
                     'html5' => false,
                     'attr' => ['class' => 'datetimepicker']
                 ])
                 ->add('enddate', DateTimeType::class, [
                     'required' => false,
-                    'label' => 'Ends On',
+                    'label' => 'Ends On (When will this event end?)',
                     'widget' => 'single_text',
                     'html5' => false,
                     'attr' => ['class' => 'datetimepicker']
