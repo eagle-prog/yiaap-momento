@@ -31,3 +31,6 @@ yarn-error.log
 ###> netbeans project ###
 /nbproject/
 ###< netbeans project ###
+
+### vscode ###
+.vscode
